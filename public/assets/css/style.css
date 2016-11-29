@@ -1,26 +1,220 @@
 html, body {
-	font-family: Consolas, monaco, monospace;
-	background-color: #272822;
-	color: #F8F8F2;
+	height: 100%;
 }
 
-.container {
-	margin: 50px;
+body {
+	font-family: arial, sans-serif;
+	color: white;
+	text-shadow: 0 0 4px black;
+	height: 100%;
+	padding-top: 97px;
+	position: relative;
+    background-image: url(../image/1.jpeg);
+    background-size: cover;
+    background: no-repeat;
 }
 
-a {
+header {
+	top: 0;
+	padding: 30px 20px;
+	background-color: #505050;
+	box-shadow: 0 0 5px #272727;
+	border-bottom: 1px solid #222;
+	z-index: 1000;
+	position: absolute;
+	width: 100%;
+	height: 97px;
+}
+
+aside, main {
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+	font-size: 0.85em;
+}
+
+main {
+	padding: 15px;
+	position: relative;
+	width: 870px;
+}
+
+aside {
+    background-color: #444;
+    box-shadow: 0 0 5px #272727;
+    overflow: hidden;
+    width: 10rem;
+}
+
+aside h3 {
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 0 4px #222;
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+    border: .1rem solid black;
+    margin-bottom: 1rem;
+}
+
+aside ul li {
+	list-style: none;
+}
+
+aside ul li a {
 	text-decoration: none;
-	color: #A6E22E;
+	display: block;
+	padding: 10px 15px;
+	border-bottom: 1px solid #353535;
 }
 
-a:hover {
-	color: #F92672;
+aside ul li:last-child a{
+	border-bottom: none;
 }
 
-h1 {
-	color: #F92672;
+aside ul li a:hover {
+	background-color: #555555;
 }
 
-h2 {
-	color: #66D9EF;
+aside ul li a.selected {
+	background-color: #353535;
+	box-shadow: 0 0 5px black inset;
+}
+
+main h2 {
+	padding: 10px 0;
+	font-size: 1.5em;
+}
+
+main p {
+	margin: 15px 0;
+}
+
+.button {
+	text-decoration: none;
+	border: none;
+	padding: 5px;
+	background: gray;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #222;
+}
+
+.messages {
+	margin: 0px;
+}
+
+.messages li {
+	list-style: none;
+	margin: 15px 0;
+}
+
+.messages li .personne {
+	font-weight: bold;
+}
+
+form input {
+	color: white;
+	background : #252525;
+	box-shadow : 0 0 5px black inset;
+	border: 1px solid gray;
+	padding : 2px;
+}
+
+.design {
+    margin: 0 auto;
+    width: 370px;
+    background-color: rgba(238, 238, 238, 0.23);
+    padding: 1rem;
+}
+
+.design p{
+	padding: 1rem;
+}
+
+.form-message {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+}
+
+.form-message input, .form-message textarea {
+	vertical-align: middle;
+	height: 30px;
+	width: calc(100% - 90px);
+}
+
+.form-message input[type="submit"] {
+	border-radius: 0;
+	width: 90px;
+}
+
+
+@media screen and (max-width: 720px){
+
+
+	body {
+	    padding-top: 2rem;
+	}
+
+	header {
+
+	    padding: 30px 2px;
+	}
+
+	main {
+
+	    width: 288px;
+	}
+
+	aside {
+	    width: 100%;
+	    margin-top: 65px;
+	}
+
+	aside, main {
+		height: 120px;
+	}
+
+	h1 {
+	    font-size: 1.2rem;
+	    padding: 1rem;
+	}
+
+	.design {
+	    width: 258px;
+	    padding: 1rem;
+	}
+
+	.design:nth-child(7){
+
+	}
+
+	.messages {
+	    margin-top: 50px;
+	}
+
+}
+
+
+
+@media screen and (min-width: 720px){
+
+	main {
+	    width: 540px;
+	}
+}
+
+@media screen and (min-width: 920px){
+	main {
+	    width: 740px;
+	}
+}
+
+@media screen and (min-width: 1020px){
+	main {
+	    width: 800px;
+	}
 }
