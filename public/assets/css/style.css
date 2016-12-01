@@ -5,20 +5,18 @@ html, body {
 body {
 	font-family: arial, sans-serif;
 	color: white;
-	text-shadow: 0 0 4px black;
+	text-shadow: 0 0 1px #ACF0F2;
 	height: 100%;
 	padding-top: 97px;
 	position: relative;
-    background-image: url(../image/1.jpeg);
-    background-size: cover;
-    background: no-repeat;
+    background-color: #ACF0F2;
 }
 
 header {
 	top: 0;
 	padding: 30px 20px;
-	background-color: #505050;
-	box-shadow: 0 0 5px #272727;
+	background-color: #225378;
+	box-shadow: 0 0 1px #225378;
 	border-bottom: 1px solid #222;
 	z-index: 1000;
 	position: absolute;
@@ -40,8 +38,7 @@ main {
 }
 
 aside {
-    background-color: #444;
-    box-shadow: 0 0 5px #272727;
+    background-color: #1595A3;
     overflow: hidden;
     width: 10rem;
 }
@@ -67,7 +64,7 @@ aside ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 10px 15px;
-	border-bottom: 1px solid #353535;
+	border-bottom: 0.5px solid #353535;
 }
 
 aside ul li:last-child a{
@@ -80,16 +77,21 @@ aside ul li a:hover {
 
 aside ul li a.selected {
 	background-color: #353535;
-	box-shadow: 0 0 5px black inset;
+	box-shadow: 0 0 1px black inset;
 }
 
 main h2 {
 	padding: 10px 0;
 	font-size: 1.5em;
+	color: black;
 }
 
 main p {
 	margin: 15px 0;
+}
+
+label{
+	color: black;
 }
 
 .button {

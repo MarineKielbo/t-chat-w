@@ -27,7 +27,7 @@ function afficherCheck( $valeurAttendue){
 		</p>
 		<p>
 			<label for="mot_de_passe">Mot de passe :</label>
-			<input type="text" name="mot_de_passe" id="mot_de_passe" value="<?php afficherPost('mot_de_passe'); ?>">
+			<input type="password" name="mot_de_passe" id="mot_de_passe" value="<?php afficherPost('mot_de_passe'); ?>">
 		</p>
 		<p>
 			<label for="femme">Femme :</label>
